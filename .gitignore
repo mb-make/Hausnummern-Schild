@@ -1,0 +1,8 @@
+# Temporary
+*~
+.*.swp
+.*.~lock
+
+# Outputs
+*.svg
+
