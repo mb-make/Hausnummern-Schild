@@ -1,9 +1,16 @@
 
 include <config.scad>;
 
-scale([
-    2,
-    1,
-    1
-    ])
-text("123");
+module number()
+{
+    linear_extrude(material_z, center=true)
+    text(
+        number,
+        font=font,
+        size=font_size,
+        halign="center",
+        valign="center"
+        );
+}
+
+number();

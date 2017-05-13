@@ -6,7 +6,7 @@ use <number.scad>;
 
 module model()
 {
-    color("blue")
+    color("darkcyan")
     translate([
         0,
         0,
@@ -14,7 +14,15 @@ module model()
         ])
     top();
 
-    color("yellow")
+    color("darkmagenta")
+    translate([
+        0,
+        0,
+        size_z + 3*material_z/2
+        ])
+    number();
+
+    color("darkred")
     rotate(90)
     side_translated();
 
@@ -22,7 +30,7 @@ module model()
     rotate(180)
     side_translated();
 
-    color("magenta")
+    color("blue")
     rotate(270)
     side_translated();
 }
